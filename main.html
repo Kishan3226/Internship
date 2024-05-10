@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Opportunities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Internship Opportunities</h1>
+    </header>
+    <main>
+        <section class="domain">
+            <h2>Python Development</h2>
+            <button onclick="apply('Python')">Apply</button>
+        </section>
+        <section class="domain">
+            <h2>HTML CSS JS Development</h2>
+            <button onclick="apply('HTML_CSS_JS')">Apply</button>
+        </section>
+        <section class="domain">
+            <h2>Data Science</h2>
+            <button onclick="apply('Data_Science')">Apply</button>
+        </section>
+        <section class="domain">
+            <h2>Data Analyst</h2>
+            <button onclick="apply('Data_Analyst')">Apply</button>
+        </section>
+        <section class="domain">
+            <h2>Power BI</h2>
+            <button onclick="apply('Power_BI')">Apply</button>
+        </section>
+        <section class="domain">
+            <h2>C++ Programming</h2>
+            <button onclick="apply('C++')">Apply</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.domain {
+    width: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+</style>
+<script>
+    function apply(domain) {
+        window.open(`https://docs.google.com/forms/d/e/1FAIpQLSdAvMTPp7GKnGNyfrSfj0h9wJpQOiW8Bs9iPQQBgDdNxRYtqA/viewform?usp=sf_link&entry.123=${domain}`, '_blank');
+    }
+    
+</script>
